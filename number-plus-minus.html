@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hx-number.js</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+</head>
+<body>
+<div id="hx-number" class="input-group" data-number="hxnumber" data-max="12">
+    <span class="input-group-addon js-minus">-</span>
+    <input type="text" value="3rrr" autocomplete="off" class="form-control js-input" />
+    <span class="input-group-addon js-plus">+</span>
+</div>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/hx-number.min.js"></script>
+<script>
+    $('#hx-number').on('end.hx.number', function () {
+        alert('end.hx.number')
+    })
+</script>
+</body>
+</html>
